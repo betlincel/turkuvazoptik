@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ürün Detayı — Turkuvaz Optik Lens</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-custom inner-page">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+    <img src="seffaf.png" alt="Turkuvaz Optik Logo" class="navbar-logo">
+</a>
+      <button class="navbar-toggler navbar-toggler-custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Ana Sayfa</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav.about">Hakkımızda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="products.html" data-i18n="nav.products">Ürünler</a></li>
+          <li class="nav-item"><a class="nav-link" href="brands.html" data-i18n="nav.brands">Markalar</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="nav.services">Hizmetler</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html" data-i18n="nav.gallery">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">İletişim</a></li>
+        </ul>
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="tr">TR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header" style="padding-bottom: 40px;">
+    <div class="container">
+      <nav class="breadcrumb-custom" aria-label="breadcrumb">
+        <a href="index.html" data-i18n="nav.home">Ana Sayfa</a>
+        <span>/</span>
+        <a href="products.html" data-i18n="nav.products">Ürünler</a>
+        <span>/</span>
+        <span id="breadcrumbProduct">Ürün</span>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section-padding" style="padding-top: 40px;">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-6 fade-in-left">
+          <div class="product-gallery-main">
+            <img id="mainImage" src="" alt="Product">
+          </div>
+          <div class="product-gallery-thumbs" id="galleryThumbs"></div>
+        </div>
+        <div class="col-lg-6 fade-in-right">
+          <div class="product-detail-info">
+            <p class="product-brand-name" id="productBrand"></p>
+            <h1 id="productName"></h1>
+            <p class="product-price" id="productPrice"></p>
+            <p class="product-desc" id="productDesc"></p>
+
+            <h5 class="mt-4 mb-3" style="font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase;" data-i18n="detail.features">Özellikler</h5>
+            <ul class="feature-list" id="featuresList"></ul>
+
+            <div class="brand-info-box">
+              <h5 data-i18n="detail.brand">Marka Bilgisi</h5>
+              <p id="brandInfo" style="font-size: 0.85rem; color: var(--gray); font-weight: 300; margin: 0;"></p>
+            </div>
+
+            <div class="d-flex gap-3 mt-4 flex-wrap">
+              <a href="contact.html" class="btn-luxury-filled btn-luxury"><span data-i18n="detail.contact">Bilgi Al</span></a>
+              <a href="https://wa.me/903120000000" target="_blank" rel="noopener" class="btn-luxury"><span>WhatsApp</span> <i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding" style="background: var(--white); padding-top: 0;">
+    <div class="container">
+      <div class="mb-5 fade-in">
+        <h2 class="section-title" data-i18n="detail.similar">Benzer Ürünler</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="row" id="similarProducts"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">Turkuvaz Optik Lens</div>
+          <p class="footer-desc" data-i18n="footer.desc">Ankara'nın premium optik mağazası. Dünyanın en seçkin gözlük markalarını sizlerle buluşturuyoruz.</p>
+          <div class="social-icons">
+            <a href="https://instagram.com/turkuvaz.optik" target="_blank" rel="noopener" class="social-icon"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 data-i18n="footer.links">Hızlı Bağlantılar</h5>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav.home">Ana Sayfa</a></li>
+            <li><a href="about.html" data-i18n="nav.about">Hakkımızda</a></li>
+            <li><a href="products.html" data-i18n="nav.products">Ürünler</a></li>
+            <li><a href="brands.html" data-i18n="nav.brands">Markalar</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Hizmetler</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Galeri</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">İletişim</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h5 data-i18n="footer.contact">İletişim</h5>
+          <ul class="footer-contact">
+            <li><i class="bi bi-geo-alt"></i> Çevreli Caddesi No:52/A Aydınlıkevler, Ankara</li>
+            <li><i class="bi bi-telephone"></i> +90 (312) 000 00 00</li>
+            <li><i class="bi bi-envelope"></i> info@turkuvazoptik.com</li>
+            <li><i class="bi bi-clock"></i> <span data-i18n="contact.hours.val">Pzt - Cmt: 09:00 - 19:00</span></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5 data-i18n="footer.follow">Bizi Takip Edin</h5>
+          <p class="footer-desc">@turkuvaz.optik</p>
+          <a href="https://instagram.com/turkuvaz.optik" target="_blank" rel="noopener" class="btn-luxury" style="border-color: rgba(255,255,255,0.3); color: rgba(255,255,255,0.7);">
+            <span>Instagram</span> <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Turkuvaz Optik Lens. <span data-i18n="footer.rights">Tüm hakları saklıdır.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/903120000000" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/product-detail.js"></script>
+</body>
+</html>

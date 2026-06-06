@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Turkuvaz Optik Lens — Ankara'nın premium optik mağazası. Dünyanın en seçkin gözlük markaları.">
+  <title>Turkuvaz Optik Lens — Premium Gözlük Mağazası</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+    <img src="seffaf.png" alt="Turkuvaz Optik Logo" class="navbar-logo">
+</a>
+      <button class="navbar-toggler navbar-toggler-custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html" data-i18n="nav.home">Ana Sayfa</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav.about">Hakkımızda</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html" data-i18n="nav.products">Ürünler</a></li>
+          <li class="nav-item"><a class="nav-link" href="brands.html" data-i18n="nav.brands">Markalar</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="nav.services">Hizmetler</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html" data-i18n="nav.gallery">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">İletişim</a></li>
+        </ul>
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="tr">TR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Slider -->
+  <section class="hero-section">
+    <div class="hero-slide active">
+      <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=1920&h=1080&fit=crop" alt="Luxury Eyewear">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-subtitle" data-i18n="hero.subtitle">Premium Gözlük Deneyimi</p>
+          <h1 data-i18n="hero.title1">Zarafetin Yeni Tanımı</h1>
+          <p data-i18n="hero.desc1">Dünyanın en seçkin gözlük markalarını keşfedin. Stilinizi yansıtan özel koleksiyonlar.</p>
+          <a href="products.html" class="btn-luxury"><span data-i18n="hero.cta">Koleksiyonu Keşfet</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide">
+      <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=1920&h=1080&fit=crop" alt="Sunglasses Collection">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-subtitle" data-i18n="hero.subtitle">Premium Gözlük Deneyimi</p>
+          <h1 data-i18n="hero.title2">Görüşünüz, Tarzınız</h1>
+          <p data-i18n="hero.desc2">Uzman optisyenlerimizle kişiye özel çözümler. Her detayda mükemmellik.</p>
+          <a href="services.html" class="btn-luxury"><span data-i18n="hero.cta">Koleksiyonu Keşfet</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide">
+      <img src="https://images.unsplash.com/photo-1622519407650-3df9883f76e5?w=1920&h=1080&fit=crop" alt="Designer Glasses">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-subtitle" data-i18n="hero.subtitle">Premium Gözlük Deneyimi</p>
+          <h1 data-i18n="hero.title3">Lüks Koleksiyon</h1>
+          <p data-i18n="hero.desc3">Chanel, Prada, Gucci ve daha fazlası. Turkuvaz Optik Lens'te sizi bekliyor.</p>
+          <a href="brands.html" class="btn-luxury"><span data-i18n="hero.cta">Koleksiyonu Keşfet</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-arrows">
+      <button class="hero-arrow hero-prev" aria-label="Previous"><i class="bi bi-chevron-left"></i></button>
+      <button class="hero-arrow hero-next" aria-label="Next"><i class="bi bi-chevron-right"></i></button>
+    </div>
+    <div class="hero-nav">
+      <button class="hero-dot active" aria-label="Slide 1"></button>
+      <button class="hero-dot" aria-label="Slide 2"></button>
+      <button class="hero-dot" aria-label="Slide 3"></button>
+    </div>
+    <div class="scroll-indicator"><span></span></div>
+  </section>
+
+  <!-- Featured Categories -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <p class="section-subtitle" data-i18n="section.featured.sub">Size özel seçilmiş koleksiyonlar</p>
+        <h2 class="section-title" data-i18n="section.featured">Öne Çıkan Kategoriler</h2>
+        <div class="section-divider mx-auto"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4 fade-in">
+          <a href="products.html?category=women" class="category-card d-block">
+            <img src="https://images.unsplash.com/photo-1622519407650-3df9883f76e5?w=600&h=800&fit=crop" alt="Women's Eyewear">
+            <div class="category-overlay">
+              <h3 data-i18n="cat.women">Kadın</h3>
+              <span class="category-link" data-i18n="section.discover">Keşfet →</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 fade-in">
+          <a href="products.html?category=men" class="category-card d-block">
+            <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?w=600&h=800&fit=crop" alt="Men's Eyewear">
+            <div class="category-overlay">
+              <h3 data-i18n="cat.men">Erkek</h3>
+              <span class="category-link" data-i18n="section.discover">Keşfet →</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 fade-in">
+          <a href="products.html?category=sunglasses" class="category-card d-block">
+            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600&h=800&fit=crop" alt="Sunglasses">
+            <div class="category-overlay">
+              <h3 data-i18n="cat.sunglasses">Güneş Gözlüğü</h3>
+              <span class="category-link" data-i18n="section.discover">Keşfet →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Women's Eyewear -->
+  <section class="section-padding" style="background: var(--white);">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-5 fade-in">
+        <div>
+          <p class="section-subtitle mb-1" data-i18n="section.women.sub">Zarif ve modern tasarımlar</p>
+          <h2 class="section-title" data-i18n="section.women">Kadın Gözlükleri</h2>
+          <div class="section-divider"></div>
+        </div>
+        <a href="products.html?category=women" class="btn-luxury d-none d-md-inline-flex"><span data-i18n="section.viewall">Tümünü Gör</span></a>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4 fade-in">
+          <div class="product-card">
+            <div class="product-card-image">
+              <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600&h=600&fit=crop" alt="Elegance Cat-Eye">
+              <span class="product-card-badge" data-i18n="product.new">Yeni</span>
+            </div>
+            <div class="product-card-body">
+              <h4>Elegance Cat-Eye</h4>
+              <span class="product-brand">Chanel</span>
+              <a href="product-detail.html?id=1" class="btn-luxury"><span data-i18n="product.view">İncele</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <div class="product-card">
+            <div class="product-card-image">
+              <img src="https://images.unsplash.com/photo-1622519407650-3df9883f76e5?w=600&h=600&fit=crop" alt="Sophisticated Oval">
+            </div>
+            <div class="product-card-body">
+              <h4>Sophisticated Oval</h4>
+              <span class="product-brand">Gucci</span>
+              <a href="product-detail.html?id=5" class="btn-luxury"><span data-i18n="product.view">İncele</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <div class="product-card">
+            <div class="product-card-image">
+              <img src="https://images.unsplash.com/photo-1622519407650-3df9883f76e5?w=600&h=600&fit=crop" alt="Bold Butterfly">
+            </div>
+            <div class="product-card-body">
+              <h4>Bold Butterfly</h4>
+              <span class="product-brand">Dior</span>
+              <a href="product-detail.html?id=11" class="btn-luxury"><span data-i18n="product.view">İncele</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4 d-md-none">
+        <a href="products.html?category=women" class="btn-luxury"><span data-i18n="section.viewall">Tümünü Gör</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Men's Eyewear -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-5 fade-in">
+        <div>
+          <p class="section-subtitle mb-1" data-i18n="section.men.sub">Klasik ve çağdaş stiller</p>
+          <h2 class="section-title" data-i18n="section.men">Erkek Gözlükleri</h2>
+          <div class="section-divider"></div>
+        </div>
+        <a href="products.html?category=men" class="btn-luxury d-none d-md-inline-flex"><span data-i18n="section.viewall">Tümünü Gör</span></a>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4 fade-in">
+          <div class="product-card">
+            <div class="product-card-image">
+              <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?w=600&h=600&fit=crop" alt="Urban Square">
+              <span class="product-card-badge" data-i18n="product.new">Yeni</span>
+            </div>
+            <div class="product-card-body">
+              <h4>Urban Square</h4>
+              <span class="product-brand">Prada</span>
+              <a href="product-detail.html?id=3" class="btn-luxury"><span data-i18n="product.view">İncele</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <div class="product-card">
+            <div class="product-card-image">
+              <img src="https://images.unsplash.com/photo-1473496163034-7ca85d021e0f?w=600&h=600&fit=crop" alt="Executive Rectangle">
+            </div>
+            <div class="product-card-body">
+              <h4>Executive Rectangle</h4>
+              <span class="product-brand">Tom Ford</span>
+              <a href="product-detail.html?id=6" class="btn-luxury"><span data-i18n="product.view">İncele</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <div class="product-card">
+            <div class="product-card-image">
+              <img src="https://images.unsplash.com/photo-1591076482161-42cead1a7b9c?w=600&h=600&fit=crop" alt="Retro Round Optical">
+            </div>
+            <div class="product-card-body">
+              <h4>Retro Round Optical</h4>
+              <span class="product-brand">Oliver Peoples</span>
+              <a href="product-detail.html?id=7" class="btn-luxury"><span data-i18n="product.view">İncele</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4 d-md-none">
+        <a href="products.html?category=men" class="btn-luxury"><span data-i18n="section.viewall">Tümünü Gör</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Children's Eyewear -->
+  <section class="section-padding" style="background: var(--white);">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-5 fade-in">
+        <div>
+          <p class="section-subtitle mb-1" data-i18n="section.children.sub">Renkli ve dayanıklı modeller</p>
+          <h2 class="section-title" data-i18n="section.children">Çocuk Gözlükleri</h2>
+          <div class="section-divider"></div>
+        </div>
+        <a href="products.html?category=children" class="btn-luxury d-none d-md-inline-flex"><span data-i18n="section.viewall">Tümünü Gör</span></a>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4 fade-in">
+          <div class="product-card">
+            <div class="product-card-image">
+              <img src="https://images.unsplash.com/photo-1509695507497-9030d7f0f015?w=600&h=600&fit=crop" alt="Playful Round">
+            </div>
+            <div class="product-card-body">
+              <h4>Playful Round</h4>
+              <span class="product-brand">Ray-Ban Junior</span>
+              <a href="product-detail.html?id=4" class="btn-luxury"><span data-i18n="product.view">İncele</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4 d-md-none">
+        <a href="products.html?category=children" class="btn-luxury"><span data-i18n="section.viewall">Tümünü Gör</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sunglasses -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-5 fade-in">
+        <div>
+          <p class="section-subtitle mb-1" data-i18n="section.sunglasses.sub">UV korumalı premium modeller</p>
+          <h2 class="section-title" data-i18n="section.sunglasses">Güneş Gözlükleri</h2>
+          <div class="section-divider"></div>
+        </div>
+        <a href="products.html?category=sunglasses" class="btn-luxury d-none d-md-inline-flex"><span data-i18n="section.viewall">Tümünü Gör</span></a>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4 fade-in">
+          <div class="product-card">
+            <div class="product-card-image">
+              <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600&h=600&fit=crop" alt="Classic Aviator">
+              <span class="product-card-badge" data-i18n="product.bestseller">Çok Satan</span>
+            </div>
+            <div class="product-card-body">
+              <h4>Classic Aviator</h4>
+              <span class="product-brand">Ray-Ban</span>
+              <a href="product-detail.html?id=2" class="btn-luxury"><span data-i18n="product.view">İncele</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <div class="product-card">
+            <div class="product-card-image">
+              <img src="https://images.unsplash.com/photo-1572635196233-14b250f65317?w=600&h=600&fit=crop" alt="Sport Shield">
+            </div>
+            <div class="product-card-body">
+              <h4>Sport Shield</h4>
+              <span class="product-brand">Oakley</span>
+              <a href="product-detail.html?id=8" class="btn-luxury"><span data-i18n="product.view">İncele</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <a href="products.html?category=sunglasses" class="category-card d-block" style="aspect-ratio: 1;">
+            <img src="https://images.unsplash.com/photo-1572635196233-14b250f65317?w=600&h=600&fit=crop" alt="More Sunglasses">
+            <div class="category-overlay">
+              <h3 data-i18n="section.viewall">Tümünü Gör</h3>
+              <span class="category-link" data-i18n="section.discover">Keşfet →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Optical Glasses -->
+  <section class="section-padding" style="background: var(--white);">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-5 fade-in">
+        <div>
+          <p class="section-subtitle mb-1" data-i18n="section.optical.sub">Görüşünüz için en iyi çözümler</p>
+          <h2 class="section-title" data-i18n="section.optical">Optik Gözlükler</h2>
+          <div class="section-divider"></div>
+        </div>
+        <a href="products.html?category=optical" class="btn-luxury d-none d-md-inline-flex"><span data-i18n="section.viewall">Tümünü Gör</span></a>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 fade-in">
+          <div class="product-card">
+            <div class="product-card-image">
+              <img src="https://images.unsplash.com/photo-1591076482161-42cead1a7b9c?w=600&h=600&fit=crop" alt="Retro Round Optical">
+              <span class="product-card-badge" data-i18n="product.new">Yeni</span>
+            </div>
+            <div class="product-card-body">
+              <h4>Retro Round Optical</h4>
+              <span class="product-brand">Oliver Peoples</span>
+              <a href="product-detail.html?id=7" class="btn-luxury"><span data-i18n="product.view">İncele</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 fade-in">
+          <div class="product-card">
+            <div class="product-card-image">
+              <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600&h=600&fit=crop" alt="Minimalist Wire">
+            </div>
+            <div class="product-card-body">
+              <h4>Minimalist Wire</h4>
+              <span class="product-brand">Silhouette</span>
+              <a href="product-detail.html?id=10" class="btn-luxury"><span data-i18n="product.view">İncele</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-padding cta-section">
+    <div class="container">
+      <div class="cta-content fade-in">
+        <h2 data-i18n="cta.title">Görüşünüz İçin Buradayız</h2>
+        <p data-i18n="cta.desc">Uzman ekibimizle randevu alın, size en uygun gözlüğü birlikte bulalım.</p>
+        <a href="contact.html" class="btn-luxury"><span data-i18n="cta.btn">İletişime Geçin</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram Section -->
+  <section class="section-padding instagram-section">
+    <div class="container">
+      <div class="text-center mb-5 fade-in">
+        <p class="section-subtitle" data-i18n="instagram.sub">@turkuvaz.optik</p>
+        <h2 class="section-title" data-i18n="instagram.title">Bizi Instagram'da Takip Edin</h2>
+        <div class="section-divider mx-auto"></div>
+        <a href="https://instagram.com/turkuvaz.optik" target="_blank" rel="noopener" class="btn-luxury-filled mt-3"><span data-i18n="instagram.follow">Takip Et</span> <i class="bi bi-instagram"></i></a>
+      </div>
+      <div class="instagram-grid fade-in">
+        <div class="instagram-item"><img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=400&h=400&fit=crop" alt="Instagram"><div class="insta-overlay"><i class="bi bi-instagram"></i></div></div>
+        <div class="instagram-item"><img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400&h=400&fit=crop" alt="Instagram"><div class="insta-overlay"><i class="bi bi-instagram"></i></div></div>
+        <div class="instagram-item"><img src="https://images.unsplash.com/photo-1577803645773-f96470509666?w=400&h=400&fit=crop" alt="Instagram"><div class="insta-overlay"><i class="bi bi-instagram"></i></div></div>
+        <div class="instagram-item"><img src="https://images.unsplash.com/photo-1622519407650-3df9883f76e5?w=400&h=400&fit=crop" alt="Instagram"><div class="insta-overlay"><i class="bi bi-instagram"></i></div></div>
+        <div class="instagram-item"><img src="https://images.unsplash.com/photo-1473496163034-7ca85d021e0f?w=400&h=400&fit=crop" alt="Instagram"><div class="insta-overlay"><i class="bi bi-instagram"></i></div></div>
+        <div class="instagram-item"><img src="https://images.unsplash.com/photo-1509695507497-9030d7f0f015?w=400&h=400&fit=crop" alt="Instagram"><div class="insta-overlay"><i class="bi bi-instagram"></i></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">Turkuvaz Optik Lens</div>
+          <p class="footer-desc" data-i18n="footer.desc">Ankara'nın premium optik mağazası. Dünyanın en seçkin gözlük markalarını sizlerle buluşturuyoruz.</p>
+          <div class="social-icons">
+            <a href="https://instagram.com/turkuvaz.optik" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 data-i18n="footer.links">Hızlı Bağlantılar</h5>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav.home">Ana Sayfa</a></li>
+            <li><a href="about.html" data-i18n="nav.about">Hakkımızda</a></li>
+            <li><a href="products.html" data-i18n="nav.products">Ürünler</a></li>
+            <li><a href="brands.html" data-i18n="nav.brands">Markalar</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Hizmetler</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Galeri</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">İletişim</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h5 data-i18n="footer.contact">İletişim</h5>
+          <ul class="footer-contact">
+            <li><i class="bi bi-geo-alt"></i> Çevreli Caddesi No:52/A Aydınlıkevler, Ankara</li>
+            <li><i class="bi bi-telephone"></i> +90 (312) 000 00 00</li>
+            <li><i class="bi bi-envelope"></i> info@turkuvazoptik.com</li>
+            <li><i class="bi bi-clock"></i> <span data-i18n="contact.hours.val">Pzt - Cmt: 09:00 - 19:00</span></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5 data-i18n="footer.follow">Bizi Takip Edin</h5>
+          <p class="footer-desc">@turkuvaz.optik</p>
+          <a href="https://instagram.com/turkuvaz.optik" target="_blank" rel="noopener" class="btn-luxury" style="border-color: rgba(255,255,255,0.3); color: rgba(255,255,255,0.7);">
+            <span>Instagram</span> <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Turkuvaz Optik Lens. <span data-i18n="footer.rights">Tüm hakları saklıdır.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/903120000000" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
